@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   unit-tests:
     name: unit-tests (${{ matrix.os }}, ${{ matrix.node-version }})
