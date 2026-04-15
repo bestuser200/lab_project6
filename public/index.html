@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Парковочный калькулятор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="icon">🅿</div>
+    <h1>Парковка</h1>
+    <p class="subtitle">Расчёт стоимости при выезде</p>
+
+    <div class="info-block">
+      <p>📋 <strong>Условия парковки:</strong></p>
+      <p>• Бесплатный период — первые <strong>15 минут</strong></p>
+      <p>• Каждый неполный час округляется до полного</p>
+      <p>• Стоимость: <strong>100 руб./час</strong></p>
+    </div>
+
+    <label>Номер автомобиля</label>
+    <input type="text" id="plate" placeholder="А001АА77">
+
+    <button id="calculateBtn">Рассчитать стоимость при выезде</button>
+    <div id="resultArea"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
