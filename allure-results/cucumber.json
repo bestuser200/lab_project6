@@ -1,0 +1,393 @@
+[
+  {
+    "description": "  Система должна рассчитать стоимость парковки при выезде",
+    "elements": [
+      {
+        "description": "",
+        "id": "расчёт-стоимости-парковки;расчёт-стоимости-для-разного-времени",
+        "keyword": "Структура сценария",
+        "line": 14,
+        "name": "Расчёт стоимости для разного времени",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Допустим ",
+            "line": 6,
+            "name": "я регистрирую въезд автомобиля \"А001АА77\" с временем 10 минут назад",
+            "match": {
+              "location": "steps\\parkingSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26213699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Когда ",
+            "line": 7,
+            "name": "я получаю время въезда для автомобиля \"А001АА77\"",
+            "match": {
+              "location": "steps\\parkingSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5270200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "И ",
+            "line": 8,
+            "name": "я отправляю запрос на выезд с тарифом 50 руб/час",
+            "match": {
+              "location": "steps\\parkingSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20863600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Тогда ",
+            "line": 9,
+            "name": "стоимость парковки должна быть 0 рублей",
+            "match": {
+              "location": "steps\\parkingSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 160700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "И ",
+            "line": 10,
+            "name": "статус ответа должен быть 200",
+            "match": {
+              "location": "steps\\parkingSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "расчёт-стоимости-парковки;расчёт-стоимости-для-разного-времени",
+        "keyword": "Структура сценария",
+        "line": 15,
+        "name": "Расчёт стоимости для разного времени",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Допустим ",
+            "line": 6,
+            "name": "я регистрирую въезд автомобиля \"Б002ББ77\" с временем 16 минут назад",
+            "match": {
+              "location": "steps\\parkingSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3910399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Когда ",
+            "line": 7,
+            "name": "я получаю время въезда для автомобиля \"Б002ББ77\"",
+            "match": {
+              "location": "steps\\parkingSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5833099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "И ",
+            "line": 8,
+            "name": "я отправляю запрос на выезд с тарифом 60 руб/час",
+            "match": {
+              "location": "steps\\parkingSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5230500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Тогда ",
+            "line": 9,
+            "name": "стоимость парковки должна быть 60 рублей",
+            "match": {
+              "location": "steps\\parkingSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "И ",
+            "line": 10,
+            "name": "статус ответа должен быть 200",
+            "match": {
+              "location": "steps\\parkingSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "расчёт-стоимости-парковки;расчёт-стоимости-для-разного-времени",
+        "keyword": "Структура сценария",
+        "line": 16,
+        "name": "Расчёт стоимости для разного времени",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Допустим ",
+            "line": 6,
+            "name": "я регистрирую въезд автомобиля \"В003ВВ77\" с временем 61 минут назад",
+            "match": {
+              "location": "steps\\parkingSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5165399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Когда ",
+            "line": 7,
+            "name": "я получаю время въезда для автомобиля \"В003ВВ77\"",
+            "match": {
+              "location": "steps\\parkingSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6570199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "И ",
+            "line": 8,
+            "name": "я отправляю запрос на выезд с тарифом 100 руб/час",
+            "match": {
+              "location": "steps\\parkingSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3847500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Тогда ",
+            "line": 9,
+            "name": "стоимость парковки должна быть 100 рублей",
+            "match": {
+              "location": "steps\\parkingSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "И ",
+            "line": 10,
+            "name": "статус ответа должен быть 200",
+            "match": {
+              "location": "steps\\parkingSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "расчёт-стоимости-парковки;расчёт-стоимости-для-разного-времени",
+        "keyword": "Структура сценария",
+        "line": 17,
+        "name": "Расчёт стоимости для разного времени",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Допустим ",
+            "line": 6,
+            "name": "я регистрирую въезд автомобиля \"Г004ГГ77\" с временем 15 минут назад",
+            "match": {
+              "location": "steps\\parkingSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5720199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Когда ",
+            "line": 7,
+            "name": "я получаю время въезда для автомобиля \"Г004ГГ77\"",
+            "match": {
+              "location": "steps\\parkingSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5920100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "И ",
+            "line": 8,
+            "name": "я отправляю запрос на выезд с тарифом 50 руб/час",
+            "match": {
+              "location": "steps\\parkingSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3644900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Тогда ",
+            "line": 9,
+            "name": "стоимость парковки должна быть 0 рублей",
+            "match": {
+              "location": "steps\\parkingSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "И ",
+            "line": 10,
+            "name": "статус ответа должен быть 200",
+            "match": {
+              "location": "steps\\parkingSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "расчёт-стоимости-парковки;расчёт-стоимости-для-разного-времени",
+        "keyword": "Структура сценария",
+        "line": 18,
+        "name": "Расчёт стоимости для разного времени",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Допустим ",
+            "line": 6,
+            "name": "я регистрирую въезд автомобиля \"Д005ДД77\" с временем 75 минут назад",
+            "match": {
+              "location": "steps\\parkingSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5951199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Когда ",
+            "line": 7,
+            "name": "я получаю время въезда для автомобиля \"Д005ДД77\"",
+            "match": {
+              "location": "steps\\parkingSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5850199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "И ",
+            "line": 8,
+            "name": "я отправляю запрос на выезд с тарифом 80 руб/час",
+            "match": {
+              "location": "steps\\parkingSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3277599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Тогда ",
+            "line": 9,
+            "name": "стоимость парковки должна быть 80 рублей",
+            "match": {
+              "location": "steps\\parkingSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "И ",
+            "line": 10,
+            "name": "статус ответа должен быть 200",
+            "match": {
+              "location": "steps\\parkingSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "расчёт-стоимости-парковки",
+    "line": 2,
+    "keyword": "Функция",
+    "name": "Расчёт стоимости парковки",
+    "tags": [],
+    "uri": "features\\parking.feature"
+  }
+]
